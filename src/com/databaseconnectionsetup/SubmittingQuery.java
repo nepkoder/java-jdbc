@@ -43,7 +43,6 @@ public class SubmittingQuery {
 			System.out.println("Database connection failed");
 
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Database driver not found");
 		}

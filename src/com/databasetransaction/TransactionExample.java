@@ -8,6 +8,11 @@ import java.util.Scanner;
 
 import DatabaseOperations.ConnectionAndDisplay;
 
+/**
+ * @author newarbhai
+ * transaction demo in jdbc
+ *
+ */
 public class TransactionExample {
 
 	// i use mysql connector for java
@@ -21,6 +26,7 @@ public class TransactionExample {
 	public static void main(String[] args) throws SQLException {
 
 		Connection con = null;
+		
 		Statement statement = null;
 
 		try {
@@ -48,7 +54,7 @@ public class TransactionExample {
 			System.out.println("Delete and set values");
 			
 //			userInput();
-			
+		
 			if (userInput()) {
 				con.commit();
 				System.out.println("Transaction Commited");
